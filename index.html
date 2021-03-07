@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Disappearing Ninja JQuery-Coding Dojo</title>
+    <script>
+        //initilize JQuery
+        $(document).ready(function () {
+            console.log("If You See This JQuery Is Working!!");
+
+            // Insert Ninja Image
+            $("img").click(function () {
+                $(this).fadeOut("slow");
+            });
+
+            // startOver button
+            $("button").click(function () {
+                $("img").fadeIn();
+                //style with css for sizing
+            });
+        });
+    </script>
+    <style>
+        body * {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        h1,
+        h4 {
+            text-align: center;
+        }
+
+        div.containerA {
+            max-width: 85%;
+            min-height: 300px;
+            margin: auto;
+        }
+
+        img {
+            width: 150px;
+        }
+
+        div.containerB {
+            margin: 0 auto;
+            width: 80%;
+        }
+
+        div.ninjas {
+            min-height: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        button.startOver {
+            display: block;
+            margin: 0 auto;
+            color: white;
+            background-color: black;
+            border-color: black;
+            border-radius: 12px;
+            padding: 2px 30px;
+        }
+
+        div.ninja {
+            width: 145px;
+            height: 150px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containerA">
+        <h1>Disappearing Ninja</h1>
+        <h4>Make The Ninja Disappear....</h4>
+        <div class="containerB">
+            <hr />
+            <div class="ninjas">
+                <div class="ninja">
+                    <img src="https://www.pinclipart.com/picdir/middle/554-5545471_ninja-clipart-printable-transparent-background-ninja-clip-art.png"
+                        alt="ninja" />
+                </div>
+                <div class="ninja">
+                    <img src="https://www.pinclipart.com/picdir/middle/554-5545471_ninja-clipart-printable-transparent-background-ninja-clip-art.png"
+                        alt="ninja" />
+                </div>
+                <div class="ninja">
+                    <img src="https://www.pinclipart.com/picdir/middle/554-5545471_ninja-clipart-printable-transparent-background-ninja-clip-art.png"
+                        alt="ninja" />
+                </div>
+                <div class="ninja">
+                    <img src="https://www.pinclipart.com/picdir/middle/554-5545471_ninja-clipart-printable-transparent-background-ninja-clip-art.png"
+                        alt="ninja" />
+                </div>
+            </div>
+            <div class="ninjas">
+                <div class="ninja">
+                    <img src="https://www.pinclipart.com/picdir/middle/554-5545471_ninja-clipart-printable-transparent-background-ninja-clip-art.png"
+                        alt="ninja" />
+                </div>
+                <div class="ninja">
+                    <img src="https://www.pinclipart.com/picdir/middle/554-5545471_ninja-clipart-printable-transparent-background-ninja-clip-art.png"
+                        alt="ninja" />
+                </div>
+                <div class="ninja">
+                    <img src="https://www.pinclipart.com/picdir/middle/554-5545471_ninja-clipart-printable-transparent-background-ninja-clip-art.png"
+                        alt="ninja" />
+                </div>
+                <div class="ninja">
+                    <img src="https://www.pinclipart.com/picdir/middle/554-5545471_ninja-clipart-printable-transparent-background-ninja-clip-art.png"
+                        alt="ninja" />
+                </div>
+            </div>
+            <hr />
+            <button class="startOver">Start Over</button>
+        </div>
+    </div>
+</body>
+
+</html>
